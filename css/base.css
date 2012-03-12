@@ -1,0 +1,419 @@
+@font-face {
+    font-family: 'KlavikaLight';
+    src: url('fonts/klavika-light-webfont.eot');
+    src: url('fonts/klavika-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/klavika-light-webfont.woff') format('woff'),
+         url('fonts/klavika-light-webfont.ttf') format('truetype'),
+         url('fonts/klavika-light-webfont.svg#KlavikaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'KlavikaRegular';
+    src: url('fonts/klavika-regular-webfont.eot');
+    src: url('fonts/klavika-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/klavika-regular-webfont.woff') format('woff'),
+         url('fonts/klavika-regular-webfont.ttf') format('truetype'),
+         url('fonts/klavika-regular-webfont.svg#KlavikaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body
+{
+	margin: 0;
+	padding: 100px 0;
+	font: normal 13px/1.4 Verdana, Arial;
+}
+
+#body
+{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    outline: 1px solid #069;
+}
+
+
+dl,
+dd,
+dt
+{
+    margin: 0;
+    padding: 0;
+}
+dd
+{
+    margin-bottom: 10px;
+}
+
+/* * * * * * * */
+/* buttons     */
+/* * * * * * * */
+
+/* as link */
+a.btn
+{
+    display: inline-block;
+    color: #fff;
+    padding-right: 8px;
+    margin-left: -4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: url('../gfx/btn/buttons.png') 0 0 no-repeat;
+    }
+    a.btn .button
+    {
+        display: block;
+        padding: 0 7px 0 15px;
+        background: url('../gfx/btn/buttons.png') 0 0 no-repeat;
+    }
+    /* big button */
+    a.btnBig .button
+    {
+        line-height: 56px;
+        height: 56px;
+        padding: 0 12px 0 20px;
+        }
+        a.btnBig.btnGrey
+        {
+            background-position: 100% -356px;
+            }
+            a.btnBig.btnGrey .button
+            {
+                background-position: 0 -300px;
+            }
+        a.btnBig.btnGreen
+        {
+            background-position: 100% -656px;
+            }
+            a.btnBig.btnGreen .button
+            {
+                background-position: 0 -600px;
+            }
+    /* middle button */
+    a.btnMedium .button
+    {
+        line-height: 46px;
+        height: 46px;
+        }
+        /* green */
+        a.btnMedium.btnGreen
+        {
+            background-position: 100% -46px;
+            }
+            a.btnMedium.btnGreen .button
+            {
+                background-position: 0 0;
+            }
+        /* orange */
+        a.btnMedium.btnOrange
+        {
+            background-position: 100% -196px;
+            }
+            a.btnMedium.btnOrange .button
+            {
+                background-position: 0 -150px;
+            }
+    /* small button */
+    a.btnSmall .button
+    {
+        line-height: 36px;
+        height: 36px;
+        }
+        a.btnSmall.btnGreen
+        {
+            background-position: 100% -486px;
+            }
+            a.btnSmall.btnGreen .button
+            {
+                background-position: 0 -450px;
+            }
+
+/* as button */
+span.btn
+{
+    display: inline-block;
+    margin-left: -4px;
+    padding-right: 8px;
+    background: url('../gfx/btn/buttons.png') 0 0 no-repeat;
+    }
+    span.btn .button,
+    span.btn .btnHolder
+    {
+        overflow: visible;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+        border: 0;
+        padding: 0 7px 0 15px;
+        margin: 0;
+        cursor: pointer;
+        background: url('../gfx/btn/buttons.png') 0 0 no-repeat;
+        white-space: nowrap;
+    }
+    /* big */
+    span.btnBig .button,
+    span.btnBig .btnHolder
+    {
+        line-height: 56px;
+        height: 56px;
+        padding: 0 12px 0 20px;
+        }
+        span.btnBig.btnGrey
+        {
+            background-position: 100% -356px;
+            }
+            span.btnBig.btnGrey .button,
+            span.btnBig.btnGrey .btnHolder
+            {
+                background-position: 0 -300px;
+            }
+    /* middle */
+    span.btnMedium .button,
+    span.btnMedium .btnHolder
+    {
+        line-height: 46px;
+        height: 46px;
+        }
+        /* green */
+        span.btnMedium.btnGreen
+        {
+            background-position: 100% -46px;
+            }
+            span.btnMedium.btnGreen .button,
+            span.btnMedium.btnGreen .btnHolder
+            {
+                background-position: 0 0;
+            }
+        /* orange */
+        span.btnMedium.btnOrange
+        {
+            background-position: 100% -196px;
+            }
+            span.btnMedium.btnOrange .button,
+            span.btnMedium.btnOrange .btnHolder
+            {
+                background-position: 0 -150px;
+            }
+
+    /* small button */
+    span.btnSmall .button,
+    span.btnSmall .btnHolder
+    {
+        line-height: 36px;
+        height: 36px;
+        }
+        span.btnSmall.btnGreen
+        {
+            background-position: 100% -486px;
+            }
+            span.btnSmall.btnGreen .button,
+            span.btnSmall.btnGreen .btnHolder
+            {
+                background-position: 0 -450px;
+            }
+
+.btn .btnTextHolder,
+span.btn .btnHolder .button
+{
+    display: block;
+    background: url('../gfx/btn/arrow.png') 100% 52% no-repeat;
+    padding: 0 25px 0 10px;
+    margin: 0 -5px;
+    }
+    .btn.btnBig .btnTextHolder
+    {
+        height: 56px;
+    }
+    .btn.btnMedium .btnTextHolder
+    {
+        height: 46px;
+    }
+    .btn.btnSmall .btnTextHolder
+    {
+        height: 36px;
+    }
+
+.btn.btnMedium .btnTextHolder,
+.btn.btnMedium .btnHolder .button
+{
+    background-position: 92% 52%;
+}
+.btn.btnSmall .btnTextHolder,
+.btn.btnSmall .btnHolder .button
+{
+    background-position: 97% 52%;
+}
+
+section
+{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.tabsV1 ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 37px;
+}
+.tabsV1 li
+{
+    float: left;
+    padding-right: 6px;
+    margin-right: -6px;
+    background: url('../gfx/tabs/v1-right.png') 100% 0 no-repeat;
+    }
+    .tabsV1 li.selected
+    {
+        background-position: 100% -50px;
+        position: relative;
+    }
+.tabsV1 a
+{
+    min-width: 100px;
+    display: block;
+    background: url('../gfx/tabs/v1-left.png') 0 0 no-repeat;
+    font: normal 17px/37px KlavikaRegular;
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px 0 16px;
+    }
+    .tabsV1 li.selected a
+    {
+        background-position: 0 -50px;
+    }
+.grayBox
+{
+    border-top: 1px solid #eee;
+}
+
+.topCarousel
+{
+    background: #cfd2d4 url('../gfx/carousel/bg.png') 50% 0 no-repeat;
+    height: 438px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    }
+    .subTopCarousel
+    {
+        max-width: 1600px;
+        min-width: 940px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 438px;
+    }
+    .topCarousel .slider
+    {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 438px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        }
+        .topCarousel .slider li
+        {
+            height: 438px;
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+        .topCarousel .slider .image
+        {
+            position: absolute;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+    .topCarousel .slide
+    {
+        width: 490px;
+        margin: 0 auto;
+        padding: 90px 400px 10px 50px;
+        color: #333;
+        position: relative;
+        z-index: 3;
+    }
+
+    .topCarousel h2,
+    .topCarousel h3
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .topCarousel h2
+    {
+        font: normal 35px/1.2 KlavikaRegular;
+        text-transform: uppercase;
+    }
+    .topCarousel h3
+    {
+        font: normal 23px/1.2 KlavikaLight;   
+    }
+    .topCarousel p
+    {
+        margin: 0;
+        padding: 30px 0 0;
+    }
+    .topCarousel .pagination
+    {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        z-index: 3;
+        text-align: center;
+        }
+        .topCarousel .pagination ul
+        {
+            display: inline;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .topCarousel .pagination li
+        {
+            display: inline;
+        }
+        .topCarousel .pagination a
+        {
+            background: url('../gfx/carousel/navigation-sprite.png') 0 -60px no-repeat;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            font-size: 0;
+            }
+            .topCarousel .pagination a.current
+            {
+                background-position: 0 -90px;
+            }
+        .topCarousel .pagination a.prev
+        {
+            background-position: 0 0;
+        }
+        .topCarousel .pagination a.next
+        {
+            background-position: -30px 0;
+        }
+        .topCarousel .pagination a.prev:hover
+        {
+            background-position: 0 -30px;
+        }
+        .topCarousel .pagination a.next:hover
+        {
+            background-position: -30px -30px;
+        }
