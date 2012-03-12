@@ -94,7 +94,7 @@ Copyright: 2012, Eugene Kuzmin
                 nav.links.eq(i).addClass('current');
             }
 
-            /* function - go to @i slide */
+            /* function - go to slide with index @i */
             function go2Slide(i) {
                 var indToShow = i,
                     currInd = nav.links.index(nav.holder.find('a.current')),
@@ -108,7 +108,9 @@ Copyright: 2012, Eugene Kuzmin
                 }
             }
 
-            
+            /* function - go to the next slide */
+            /* @cycle - is needed recursive moving until @indToShow doesn't match current index */
+            /* @actualSpeed - speed for animation (the more slides to rotate the faster speed) */
             function go2Next(cycle, indToShow, actualSpeed){
                 if (rotation.isScrolling) {
                     return false;
@@ -135,6 +137,9 @@ Copyright: 2012, Eugene Kuzmin
                 });
             }
 
+            /* function - go to the previous slide */
+            /* @cycle - is needed recursive moving until @indToShow doesn't match current index */
+            /* @actualSpeed - speed for animation (the more slides to rotate the faster speed) */
             function go2Prev(cycle, indToShow, actualSpeed) {
                 if (rotation.isScrolling) {
                     return false;
@@ -162,6 +167,7 @@ Copyright: 2012, Eugene Kuzmin
                 
             }
 
+            /* set/update sizes of slides */
             function setSizes() {
                 rotation.moveWidth = parseInt($('.subTopCarousel').width());
                 slides.items = slides.holder.find('>li', that);
@@ -174,7 +180,5 @@ Copyright: 2012, Eugene Kuzmin
         }
 
         this.init();
-
-
     };
 })(jQuery);
