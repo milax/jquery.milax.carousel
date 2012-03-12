@@ -1,70 +1,80 @@
 <!doctype html>
 <html>
 <head>
-	<title>Top carousel</title>
-	<link rel="stylesheet" href="css/base.css">
+    <meta charset="utf-8">
+    <title>Full width carousel</title>
+
+    <!-- use font from google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro:700' rel='stylesheet' type='text/css'>
+
+    <!-- reset css -->
+    <link href="css/reset.css" rel="stylesheet" type='text/css'>
+    <!-- our base css -->
+    <link href="css/base.css" rel="stylesheet" type='text/css'>
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
 </head>
 <body>
 
-		<div id="topCarousel" class="topCarousel">
-			<div class="subTopCarousel">
-				<ul class="slider">
-					<li data-index="1">
-						<div class="image">
-							<img src="gfx/carousel/img-001.png" alt="">
-						</div>
-						<div class="slide">
-							<h2>Lorem ipsum dolor sit maet consectetur</h2>
-							<h3>Fusce interdum arcu ut velit consectetur viverra. Integer eget purus velit, ac ultricies felis.</h3>
-							<p>
-								<a href="#" class="btn btnBig btnGreen btnArrow">
-									<span class="button">BESTIL TERMINAL</span>
-								</a>
-							</p>
-						</div>
-					</li>
-					<li data-index="2">
-						<div class="image">
-							<img src="gfx/carousel/img-002.png" alt="">
-						</div>
-						<div class="slide">
-							<h2>Fusce ac sapien malesuada ante commodo ultricies</h2>
-							<h3>Suspendisse quis mauris in massa aliquet mattis. Sed blandit facilisis lacus. Aenean velit ante</h3>
-							<p>
-								<a href="#" class="btn btnBig btnGrey btnArrow">
-									<span class="button">BESTIL TERMINAL</span>
-								</a>
-							</p>
-						</div>
-					</li>
-					<li data-index="3">
-						<div class="image">
-							<img src="gfx/carousel/img-003.png" alt="">
-						</div>
-						<div class="slide">
-							<h2>Aenean scelerisque luctus diam eu ultricies</h2>
-							<h3>Curabitur congue blandit arcu, a consectetur enim convallis et. Sed in blandit lorem. Aenean semper lectus vel diam ornare semper</h3>
-							<p>
-								<a href="#" class="btn btnBig btnGreen btnArrow">
-									<span class="button">BESTIL TERMINAL</span>
-								</a>
-							</p>
-						</div>
-					</li>				
-				</ul>
-				<div class="pagination">
-					<ul>
-						<li><a href="#" class="prev">Prev</a></li>
-						<li><a href="#" class="current">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#" class="next">Next</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+    <!-- top carousel wrapper -->
+    <div id="topCarousel" class="topCarousel">
+        <div class="subTopCarousel">
 
+            <!-- slides -->
+            <ul class="slider">
+                <li data-index="1">
+                    <div class="image">
+                        <img src="gfx/carousel/img-001.png" alt="First image">
+                    </div>
+                    <div class="slide">
+                        <h2>Lorem ipsum dolor sit maet consectetur</h2>
+                        <h3>Fusce interdum arcu ut velit consectetur viverra. Integer eget purus velit, ac ultricies felis.</h3>
+                        <p>
+                            <a href="#">Bestil terminal</a>
+                        </p>
+                    </div>
+                </li>
+                <li data-index="2">
+                    <div class="image">
+                        <img src="gfx/carousel/img-002.png" alt="Second image">
+                    </div>
+                    <div class="slide">
+                        <h2>Fusce ac sapien malesuada ante commodo ultricies</h2>
+                        <h3>Suspendisse quis mauris in massa aliquet mattis. Sed blandit facilisis lacus. Aenean velit ante</h3>
+                        <p>
+                            <a href="#">Bestil terminal</a>
+                        </p>
+                    </div>
+                </li>
+                <li data-index="3">
+                    <div class="image">
+                        <img src="gfx/carousel/img-003.png" alt="Third image">
+                    </div>
+                    <div class="slide">
+                        <h2>Aenean scelerisque luctus diam eu ultricies</h2>
+                        <h3>Curabitur congue blandit arcu, a consectetur enim convallis et. Sed in blandit lorem. Aenean semper lectus vel diam ornare semper</h3>
+                        <p>
+                            <a href="#">Bestil terminal</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <!-- /slides -->
+
+            <!-- pagination -->
+            <div class="pagination">
+                <ul>
+                    <li><a href="#" class="prev">Prev</a></li>
+                    <li><a href="#" class="current">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#" class="next">Next</a></li>
+                </ul>
+            </div>
+            <!-- /pagination -->
+        </div>
+    </div>
+    <!-- /top carousel wrapper -->
 </body>
 </html>
