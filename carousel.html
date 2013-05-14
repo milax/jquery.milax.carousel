@@ -13,7 +13,7 @@
     <link href="css/base.css" rel="stylesheet" type='text/css'>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.milax.carousel.js"></script>
 
     <script type="text/javascript">
         (function($){
@@ -32,16 +32,16 @@
 <body>
 
     <!-- top carousel wrapper -->
-    <div id="topCarousel" class="topCarousel">
+    <div id="topCarousel" class="topCarousel" data-carousel-opts="{}">
         <div class="subTopCarousel">
 
             <!-- slides -->
-            <ul class="slider">
-                <li data-index="1">
+            <ul class="slideList">
+                <li class="slideItem" data-index="1">
                     <div class="image">
                         <img src="gfx/carousel/img-001.png" alt="First image">
                     </div>
-                    <div class="slide">
+                    <div class="slideContent">
                         <h2>Lorem ipsum dolor sit maet consectetur</h2>
                         <h3>Fusce interdum arcu ut velit consectetur viverra. Integer eget purus velit, ac ultricies felis.</h3>
                         <p>
@@ -49,11 +49,11 @@
                         </p>
                     </div>
                 </li>
-                <li data-index="2">
+                <li class="slideItem" data-index="2">
                     <div class="image">
                         <img src="gfx/carousel/img-002.png" alt="Second image">
                     </div>
-                    <div class="slide">
+                    <div class="slideContent">
                         <h2>Fusce ac sapien malesuada ante commodo ultricies</h2>
                         <h3>Suspendisse quis mauris in massa aliquet mattis. Sed blandit facilisis lacus. Aenean velit ante</h3>
                         <p>
@@ -61,11 +61,11 @@
                         </p>
                     </div>
                 </li>
-                <li data-index="3">
+                <li class="slideItem" data-index="3">
                     <div class="image">
                         <img src="gfx/carousel/img-003.png" alt="Third image">
                     </div>
-                    <div class="slide">
+                    <div class="slideContent">
                         <h2>Aenean scelerisque luctus diam eu ultricies</h2>
                         <h3>Curabitur congue blandit arcu, a consectetur enim convallis et. Sed in blandit lorem. Aenean semper lectus vel diam ornare semper</h3>
                         <p>
@@ -79,11 +79,11 @@
             <!-- pagination -->
             <div class="pagination">
                 <ul>
-                    <li><a href="#" class="prev">Prev</a></li>
-                    <li><a href="#" class="current">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#" class="next">Next</a></li>
+                    <li><a href="#" class="navLnk prev" title="Previous">Prev</a></li>
+                    <li><a href="#" class="navLnk current">1</a></li>
+                    <li><a href="#" class="navLnk">2</a></li>
+                    <li><a href="#" class="navLnk">3</a></li>
+                    <li><a href="#" class="navLnk next" title="Next">Next</a></li>
                 </ul>
             </div>
             <!-- /pagination -->

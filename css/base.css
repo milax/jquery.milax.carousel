@@ -31,7 +31,7 @@ a:hover
         overflow: hidden;
         height: 438px;
     }
-    .topCarousel .slider
+    .topCarousel .slideList
     {
         list-style: none;
         margin: 0;
@@ -40,15 +40,15 @@ a:hover
         width: 100%;
         position: relative;
         z-index: 1;
-        }
-        .topCarousel .slider li
-        {
-            height: 438px;
-            float: left;
-            width: 100%;
-            position: relative;
-        }
-        .topCarousel .slider .image
+    }
+    .topCarousel .slideItem
+    {
+        height: 438px;
+        float: left;
+        width: 100%;
+        position: relative;
+       }
+        .topCarousel .slideItem .image
         {
             position: absolute;
             left: 50%;
@@ -56,15 +56,15 @@ a:hover
             height: 100%;
             z-index: 2;
         }
-    .topCarousel .slide
-    {
-        width: 490px;
-        margin: 0 auto;
-        padding: 90px 400px 10px 50px;
-        color: #333;
-        position: relative;
-        z-index: 3;
-    }
+        .topCarousel .slideItem .slideContent
+        {
+            width: 490px;
+            margin: 0 auto;
+            padding: 90px 400px 10px 50px;
+            color: #333;
+            position: relative;
+            z-index: 3;
+        }
 
     .topCarousel h2,
     .topCarousel h3
@@ -87,52 +87,53 @@ a:hover
         margin: 0;
         padding: 30px 0 0;
     }
-    /* pagination */
-    .topCarousel .pagination
+
+/* pagination */
+.topCarousel .pagination
+{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    z-index: 3;
+    text-align: center;
+    }
+    .topCarousel .pagination ul
     {
-        position: absolute;
-        width: 100%;
-        bottom: 10px;
-        z-index: 3;
-        text-align: center;
+        display: inline;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .topCarousel .pagination li
+    {
+        display: inline;
+    }
+    .topCarousel .pagination a
+    {
+        background: url('../gfx/carousel/navigation-sprite.png') 0 -60px no-repeat;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+        font-size: 0;
         }
-        .topCarousel .pagination ul
+        .topCarousel .pagination a.current
         {
-            display: inline;
-            list-style: none;
-            margin: 0;
-            padding: 0;
+            background-position: 0 -90px;
         }
-        .topCarousel .pagination li
-        {
-            display: inline;
-        }
-        .topCarousel .pagination a
-        {
-            background: url('../gfx/carousel/navigation-sprite.png') 0 -60px no-repeat;
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            margin: 0 5px;
-            font-size: 0;
-            }
-            .topCarousel .pagination a.current
-            {
-                background-position: 0 -90px;
-            }
-        .topCarousel .pagination a.prev
-        {
-            background-position: 0 0;
-        }
-        .topCarousel .pagination a.next
-        {
-            background-position: -30px 0;
-        }
-        .topCarousel .pagination a.prev:hover
-        {
-            background-position: 0 -30px;
-        }
-        .topCarousel .pagination a.next:hover
-        {
-            background-position: -30px -30px;
-        }
+    .topCarousel .pagination a.prev
+    {
+        background-position: 0 0;
+    }
+    .topCarousel .pagination a.next
+    {
+        background-position: -30px 0;
+    }
+    .topCarousel .pagination a.prev:hover
+    {
+        background-position: 0 -30px;
+    }
+    .topCarousel .pagination a.next:hover
+    {
+        background-position: -30px -30px;
+    }
